@@ -9,3 +9,13 @@ Presentation Slides :
 3. Show the students the final result.
 
 ## Build a Stateful Component
+
+1. Change the function component `TimeInterval` to a class component. Remember using React code snippets, **rcc**.
+
+2. Initiate the value of Seconds using **state**.
+
+3. Use `componentDidMount()` to start the timer and `componentDidMount` to clear it.
+
+4. Render the changing value of seconds corrently inside the component.
+
+## Build a To-Do List App
