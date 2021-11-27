@@ -10,7 +10,7 @@ function TimeInterval(props) {
 
   // Use `componentDidMount()` to help set the time interval
 
-  // Use `componentDidMount` to help clear the time interval
+  // Use `componentWillUnmount()` to help clear the time interval
 
   return <div>Seconds: {`Changing Value of Seconds`}</div>;
 }

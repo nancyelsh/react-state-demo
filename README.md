@@ -14,7 +14,7 @@ Presentation Slides :
 
 2. Initiate the value of Seconds using **state**.
 
-3. Use `componentDidMount()` to start the timer and `componentDidMount` to clear it.
+3. Use `componentDidMount()` to start the timer and `componentWillUnmount()` to clear it.
 
 4. Render the changing value of seconds corrently inside the component.
 
