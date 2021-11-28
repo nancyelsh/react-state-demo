@@ -19,3 +19,46 @@ Presentation Slides :
 4. Render the changing value of seconds corrently inside the component.
 
 ## Build a To-Do List App
+
+1. In `ToDoList.js`, start with defining **state** in the base constructor.
+
+```jsx
+...
+this.state = { items: [], text: '' };
+...
+```
+
+2. Complete the code used for **setState** so that it would update the state properly.
+
+```jsx
+     this.setState(state => ({
+      items: state.items.concat(newItem),
+      text: ''
+    }));
+   ...
+```
+
+3. Complete the code of the handleSubmit() method.
+
+```jsx
+   ...
+     const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+   ...
+```
+
+4. Pass the suitable props to `ListItems.js`.
+
+```jsx
+<ListItems items={this.state.items} />
+```
+
+5. In `ListItems.js`, utilize the passed props to display the list items.
+
+```jsx
+{
+  this.props.items.map((item) => <li key={item.id}>{item.text}</li>);
+}
+```
