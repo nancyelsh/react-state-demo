@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Welcome />
-      <TimeInterval />
-      <ToDoList />
+      {/* <TimeInterval /> */}
+      {/* <ToDoList /> */}
     </div>
   );
 }
